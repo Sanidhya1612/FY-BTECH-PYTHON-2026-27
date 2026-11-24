@@ -1,68 +1,25 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "65cd199e-54b5-4259-9c55-dba51714ccf8",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "# Assignment No. 3\n",
-    "# Check whether a triangle is right angled using a function\n",
-    "\n",
-    "def right_triangle(a, b, c):\n",
-    "    # Check if the triangle satisfies Pythagoras theorem\n",
-    "    if a * a + b * b == c * c:\n",
-    "        return \"Triangle is right angled\"\n",
-    "    elif a * a + c * c == b * b:\n",
-    "        return \"Triangle is right angled\"\n",
-    "    elif b * b + c * c == a * a:\n",
-    "        return \"Triangle is right angled\"\n",
-    "    else:\n",
-    "        return \"Triangle is not right angled\"\n",
-    "\n",
-    "\n",
-    "# Taking input from user\n",
-    "a = int(input(\"Enter number 1: \"))\n",
-    "b = int(input(\"Enter number 2: \"))\n",
-    "c = int(input(\"Enter number 3: \"))\n",
-    "\n",
-    "# Calling the function\n",
-    "result = right_triangle(a, b, c)\n",
-    "\n",
-    "# Displaying result\n",
-    "print(result)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "bdfe1af6-e888-46d6-b852-fe6e5d8f0590",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python [conda env:base] *",
-   "language": "python",
-   "name": "conda-base-py"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.13.9"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 5
-}
+# Assignment No. 3
+# Check whether a triangle is right angled using a function
 
+def right_triangle(a, b, c):
+    # Check if the triangle satisfies Pythagoras theorem
+    if a * a + b * b == c * c:
+        return "Triangle is right angled"
+    elif a * a + c * c == b * b:
+        return "Triangle is right angled"
+    elif b * b + c * c == a * a:
+        return "Triangle is right angled"
+    else:
+        return "Triangle is not right angled"
+
+
+# Taking input from user
+a = int(input("Enter number 1: "))
+b = int(input("Enter number 2: "))
+c = int(input("Enter number 3: "))
+
+# Calling the function
+result = right_triangle(a, b, c)
+
+# Displaying result
+print(result)
